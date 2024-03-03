@@ -36,3 +36,29 @@ const myFunction = function(){
 
 console.log(typeof myFunction);
 
+
+
+// Memory 
+//Stack (Primitive) , Heap(Non-primitive)
+
+//Stack Example (Copy of the original)
+
+let myYoutubeName = "HiteshChoudary.com"
+
+let anothername = myYoutubeName
+anothername = "chaiaurcode"
+
+console.log(myYoutubeName); //Old value
+console.log(anothername); //New Value
+
+//Heap Example
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+let userTwo = userOne
+// Accessing email in userTwo
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email); // Both will return the same value
+console.log(userTwo.email); // i.e the updated value "hitesh@google.com"
