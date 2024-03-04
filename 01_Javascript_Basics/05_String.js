@@ -16,12 +16,12 @@ console.log(gameName.length);
 // console.log(gameName.indexOf('t')); // 2
 
 //slice of String
-const  newString = gameName.substring(0,4) //hite i.e. not including last index
+// const  newString = gameName.substring(0,4) //hite i.e. not including last index
 //We cannot give negative value to a substring.
-console.log(newString);
+// console.log(newString);
 
-const anotherString = gameName.slice(-8,4) //ite  i.e. tracing from opposite direction
-console.log(anotherString);
+// const anotherString = gameName.slice(-8,4) //ite  i.e. tracing from opposite direction
+// console.log(anotherString);
 
 const newStringOne = "  hitesh   "
 console.log(newStringOne);
