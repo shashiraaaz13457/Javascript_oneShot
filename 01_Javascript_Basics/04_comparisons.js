@@ -2,7 +2,7 @@
 // console.log(2>=1); // true(something unusual) Because this operand checks for the left operand is greater or not only.
 // console.log(2==1);
 // console.log(2!=1);
-// console.log(2<=1); 
+// console.log(2<=1); //false
 
 //For different datatypes
 // console.log("2" > 1);  // Here javascript implicitly convert the string into Number.
@@ -23,4 +23,4 @@
 // console.log(undefined > 0);  //false
 
 // (===) Strict Check (Check Value as well as datatype)
-console.log("2" === 2);
+// console.log("2" === 2);

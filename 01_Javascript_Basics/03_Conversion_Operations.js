@@ -60,8 +60,8 @@ let str3 = str1 + str2
 // console.log(1 + 2 + "2");   //32
 
 // If one or both operands are strings, the + operator is used for string concatenation. If both operands are numbers, it performs addition. JavaScript performs type coercion to handle these situations.
-console.log(+true); //bad Practice
-console.log(+"");   //bad 
+// console.log(+true); //bad Practice
+// console.log(+"");   //bad 
 
 let num1 , num2 , num3
 num1 = num2 = num3 = 2+2  //bad practice
@@ -69,4 +69,4 @@ num1 = num2 = num3 = 2+2  //bad practice
 let gameCounter = 100
 // gameCounter++;
 ++gameCounter;
-console.log(gameCounter);
+// console.log(gameCounter);

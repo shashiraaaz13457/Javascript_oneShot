@@ -7,8 +7,9 @@ const balance =  new Number(100)  //You can explicity define that the balance is
 // console.log(balance.toFixed(2)); //100.00 
 
 const otherNumber = 123.8966
-// console.log(otherNumber.toPrecision(3));  //125
+// console.log(otherNumber.toPrecision(3));  //124
 // console.log(otherNumber.toPrecision(2));  //1.2e+2
+// console.log(otherNumber.toPrecision(4));  //123.9
 
 const hundreds = 1000000
 // console.log(hundreds.toLocaleString('en-IN')); //10,00,000
@@ -22,7 +23,7 @@ const hundreds = 1000000
 // console.log(Math.ceil(4.2)); // 5  (Upper value)
 // console.log(Math.floor(4.6)); // 4  (lower value)
 // console.log(Math.min(3,4,5)); // 3  (lower value)
-// console.log(Math.max(3,4,5)); // 5  (lower value)
+// console.log(Math.max(3,4,5)); // 5  (higher value)
 
 // console.log(Math.random());  // values between 0 and 1(decimal values)
 // console.log(Math.random()*10);  //Here it generates values between 0 and 10(not including)
