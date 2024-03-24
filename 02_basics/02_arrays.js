@@ -10,19 +10,19 @@ const dc_heros = ["superman","flash","batman"];
 // console.log(allHeros); //return the new array.
 
 //Spread Operator(...) -> All the elements inside the array acts as individual element .
-const all_new_Heros = [...marvel_heros,...dc_heros]
+// const all_new_Heros = [...marvel_heros,...dc_heros]
 // console.log(all_new_Heros); //Same output as concat but its good to use.
 
 //If you face any situation like this:
-const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
-const real_another_array = another_array.flat(Infinity); //You can also give exact depth.
+// const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
+// const real_another_array = another_array.flat(Infinity); //You can also give exact depth.
 
-console.log(real_another_array); // Merge all the elements in the array and return the new array.
+// console.log(real_another_array); // Merge all the elements in the array and return the new array.
 
 
-console.log(Array.isArray("Hitesh")); //Asking Is it a Array? return true or false value
-console.log(Array.from("Hitesh")); //Converting String to Array.
-console.log(Array.from({name: "hitesh"})); //Not converting to array ,it gives empty array. //Intresting Case
+// console.log(Array.isArray("Hitesh")); //Asking Is it a Array? return true or false value
+// console.log(Array.from("Hitesh")); //Converting String to Array.
+// console.log(Array.from({name: "hitesh"})); //Not converting to array ,it gives empty array. //Intresting Case
 
 let score1 = 100;
 let score2 = 200;

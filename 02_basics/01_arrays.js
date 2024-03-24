@@ -12,8 +12,8 @@ const myArr2 = new Array(1,2,3,4) //Array Declaration(Array constructor syntax)
 // myArr.push(7);
 // myArr.pop()
 
-// myArr.unshift(9)
-// myArr.shift()
+// myArr.unshift(9) //Aaage se 
+// myArr.shift()  //Aage se gayab..
 
 // console.log(myArr.includes(9)); //false
 // console.log(myArr.indexOf(9)); //-1 (Not Present)
