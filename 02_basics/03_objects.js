@@ -1,7 +1,7 @@
 // Singleton ->  When we declare objects from constructor then it will be singleton , if we use literal to declare object then it will not be a singleton.
 // Object.create -> Constructor method ke through
 
-//Object Literals
+//Object Literals (to declare object)
 
 const mySym = Symbol("key1")
 
