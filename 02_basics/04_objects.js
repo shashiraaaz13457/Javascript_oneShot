@@ -46,12 +46,39 @@ const users = [
     }
 ]
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // Making array of keys only
-console.log(Object.values(tinderUser)); // Making array of values only
-console.log(Object.entries(tinderUser)); // Each key value pair made a separate array inside an array.
+// console.log(Object.keys(tinderUser)); // Making array of keys only
+// console.log(Object.values(tinderUser)); // Making array of values only
+// console.log(Object.entries(tinderUser)); // Each key value pair made a separate array inside an array.
 
-// We use this hasOwnProperty to find out whether this value exist or not.
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //True
-console.log(tinderUser.hasOwnProperty('isLogged')); //False
+// // We use this hasOwnProperty to find out whether this value exist or not.
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //True
+// console.log(tinderUser.hasOwnProperty('isLogged')); //False
+
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// When you have to acess each member you have to write everytime with dot(.)notation and property to simplify these things we use destruction.
+
+// course.courseInstructor
+// course.price
+
+//You can either use this or the below one , the only difference is that we provided an alias or you can say a short name.
+// const {courseInstructor} = course
+const {courseInstructor : Instructor} = course // Destructing of course object.
+
+// console.log(courseInstructor);
+console.log(Instructor);
+
+
+//No syntax error later study this..
+// {
+//     "name" : "shashi",
+//     "coursename" : "js in hindi",
+//     "price" : "free"
+// }
