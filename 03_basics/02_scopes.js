@@ -49,7 +49,9 @@ function addOne(num){
 
 // addOne(5)
 
-// Function can't be accessed before declaration in this case. -> hoisting
+// variable can't be accessed before declaration in this case. -> mini hoisting (Let,const)
+// for var -> it gives undefined.(In let and const it gives reference error)
+// Here function can't be accessed before declaration-> hoisting 
 console.log(addTwo(5)); // Can't be accessed why? Normal function can access but Expressions don't
 // Expression 
 const addTwo = function(num){
