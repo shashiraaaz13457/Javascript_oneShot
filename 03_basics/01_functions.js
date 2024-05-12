@@ -84,7 +84,7 @@ function handleObject (anyObject){
     console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
 
 }
-// handleObject(user) //Calling the object.
+// handleObject(user) //Calling the function(object).
 //You can also do this 
 handleObject({
     username : "sam",
