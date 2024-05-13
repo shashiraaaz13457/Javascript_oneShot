@@ -20,7 +20,7 @@ const user = {
 //     console.log(this);
 // }
 
-// chai(); // Here when the function prints this keyword then I get many values.(Global values,and many things)
+// chai(); // Here when the function prints this keyword then I get many values.(Global values,methods and many things)
 
 
 // We can use this keyword inside an object but not in function as you can see..
