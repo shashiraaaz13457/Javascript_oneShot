@@ -43,7 +43,7 @@ const chai = () => {
     console.log(this.username); // undefined
 }
 
-chai();
+// chai();
 
 //Function v/s Arrow Function
 // Arrow functions do not have their own this context. They inherit this from the surrounding lexical context.
@@ -52,3 +52,14 @@ chai();
 
 //Syntax of Arrow function
 // () => {}
+
+// const addTwo = (num1,num2) => {
+//     return num1 + num2 //Explicit return
+// }
+
+//Implicit return
+// const addTwo = (num1,num2) => num1 + num2 //Gives the same value
+// const addTwo = (num1,num2) => (num1+num2) //This will also work but don't use curly braces if you use it then you have to use return keyword.
+const addTwo = (num1,num2) => ({username: "shashi"}) // For Object 
+
+console.log(addTwo(3,4));
