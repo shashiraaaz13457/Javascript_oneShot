@@ -60,8 +60,45 @@ const myNumbers = [1,2,3,4,5,6,7,8,9,10]
 // })
 
 //Chaining
-const newNums = myNumbers
-                .map((num) => num * 10) //firstly it will convert it into [10,20,...]
-                .map((num)=> num + 1) // then that array is going to add 1 [10+1,20+1,....] 
-                .filter((num) => num >= 40)
-console.log(newNums);
+// const newNums = myNumbers
+//                 .map((num) => num * 10) //firstly it will convert it into [10,20,...]
+//                 .map((num)=> num + 1) // then that array is going to add 1 [10+1,20+1,....] 
+//                 .filter((num) => num >= 40)
+// console.log(newNums);
+
+//Reduce
+//Syntax - arr.reduce((accumulator,currentValue) => accumulator + currentValue,initialValue)
+//accumulator takes initial value first (only once)
+const myNum = [1,2,3];
+
+// const myTotal = myNum.reduce( function (acc,curVal) {
+//     console.log(`acc: ${acc} and curVal ${curVal}`);
+//     return acc + curVal;
+// },0)
+
+//Now with arrow function
+const myTotal = myNum.reduce( (acc,curVal) => {
+    return acc + curVal;
+},0)
+// console.log(myTotal);
+
+
+//More Example
+
+const shoppingCart = [
+    {
+        itemName : "js Course",
+        price : 3999
+    },
+    {
+        itemName : "py Course",
+        price : 999
+    },
+    {
+        itemName : "web dev Course",
+        price : 1999
+    }
+];
+
+const PriceToPay = shoppingCart.reduce((acc,item) => acc + item.price,0)
+console.log(PriceToPay);
