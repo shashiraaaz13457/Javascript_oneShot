@@ -89,14 +89,16 @@ form.addEventListener('submit', function (e) {
 ## project 3 solution code
 
 ```javascript
-const clock = document.getElementById('clock');
-// const clock = document.querySelector('#clock')
+const clock = document.getElementById('clock')
 
-setInterval(function () {
+// let date = new Date();
+
+//This method gives us the time at particular interval which you set.
+//Two parameters are there (function(){},Time Interval)
+setInterval(function(){
   let date = new Date();
-  // console.log(date.toLocaleTimeString());
   clock.innerHTML = date.toLocaleTimeString();
-}, 1000);
+},1000);
 
 
 ```
