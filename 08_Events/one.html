@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: #414141;">
+    <h2>Amazing Images</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+
+</body>
+<script>
+    // Onclick gives less features so we don't use it usually
+
+    // document.getElementById('owl').onclick = function(){
+    //     alert('Owl Clicked')
+    // }
+    
+    //attachEvent() - Pehle use krte the
+    //jQuery - Ye v use kr skte h
+
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e);
+    //     // alert('Owl Clicked again')
+    // }, false)
+
+    // We have see all these topics in Events.
+
+    //type , timestamp, defaultPrevented , target , toElement , srcElement, currentTarget
+    //clientX, clientY, screenX, screenY, altkey, ctrlKey, shiftkey, keyCode
+    
+    //Event Propagation
+    //Event Bubbling - false , Event Capturing - true
+
+    //Event Bubbling (bottom to top)
+    //Yha pe ul ke andrr li ka id h "owl" h , to bubbling ke according this is going to execute first then the ul one i.e. clicked inside ul.
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('Clicked inside the ul');
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('Owl clicked');
+    //     e.stopPropagation(); //Isko use krne se event bubble nhi krega
+    // }, false)
+
+    //Event Capturing
+    // Yha pe ul wla kaam krega then andr uske li wla 
+    // top to bottom
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('Clicked inside the ul');
+    //     e.stopPropagation(); 
+    // }, true)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('Owl clicked');
+        
+    // }, true)
+
+    // document.getElementById('google').addEventListener('click',function (e){
+    //     console.log("google clicked");
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // },false)
+
+
+    // Here we are doing some activities to disappear the image.
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e);
+        // console.log(e.target);
+        // console.log(e.target.parentNode);//li is selected of target
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+        
+
+        // let removeIt = e.target.parentNode;
+        // removeIt.remove();//Yha pe issue aa rha h ki agr tm images ke alwa li pe click kr rhe toh pura element gayab ho jata h
+
+
+
+        //Another method to remove.
+        // removeIt.parentNode.removeChild(removeIt)
+        
+        
+    },false)
+
+</script>
+</html>
